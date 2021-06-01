@@ -1,0 +1,61 @@
+*
+    margin: 0
+    padding: 0
+    outline: none
+    box-sizing: inherit
+
+\:root
+    box-sizing: border-box
+    font-size: 16px
+
+body 
+    font-family: Cuprum
+    font-style: normal
+
+// @media (min-width: 768px) and (max-width: 992px)
+// \:root
+//     font-size: 12px
+
+// @media (min-width: 576px) and (max-width: 768px)
+// \:root
+//     font-size: 12px
+
+// @media (min-width: 320px) and (max-width: 576px)
+// \:root
+//     font-size: 10px
+
+.container
+    max-width: 1170px
+    margin: 0 auto
+
+.hide
+    display: none
+.show 
+    display: block
+
+.fade
+  animation-name: fade
+  animation-duration: 2.5s
+  -webkit-animation-name: fade
+  -webkit-animation-duration: 2.5s
+
+@-webkit-keyframes fade
+  0%
+    opacity: 0.1
+
+  to
+    opacity: 1
+
+@keyframes fade
+  0%
+    opacity: 0.1
+
+  to
+    opacity: 1
+
+@import 'header'
+@import 'mainScreen'
+@import 'services'
+@import 'tariffs'
+@import  'contacts'
+@import 'footer'

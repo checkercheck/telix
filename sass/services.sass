@@ -1,0 +1,57 @@
+.services
+    padding: 3.625rem 0 0 0
+    &__container
+        display: flex
+        justify-content: space-between
+        &:last-child
+            margin-top: 1.25rem
+
+
+.service-block
+    width: 32.5%
+    background: #32425C
+    display: flex
+    justify-content: space-between
+    padding: 1.4375rem
+    &:hover
+        background: #C1272D
+        transition: 0.3s all
+    &__button
+        width: 8.4375rem
+        height: 2.375rem
+        border: none
+        color: #fff
+        background: rgba(255,255,255, 0.3)
+        margin-top: 0.75rem
+        cursor: pointer
+    &__title
+        font-weight: normal
+        font-size: 1.5rem
+        color: #fff
+        line-height: 1.875rem
+    &__img
+        width: 21%
+        
+.service-slider
+    width: 100%
+    margin-top: 1.25rem
+    position: relative
+    min-width: 0
+    &__slide
+    &__arrows
+        width: 21px
+        height: 39px
+        position: absolute 
+        top: 40%
+        margin: 0.9375rem 0 0 0
+        z-index: 1
+        border: none
+    &__prev
+        left: 2%
+        background: url('../img/services/prev.png') center no-repeat
+    &__next
+        right: 2%
+        background: url('../img/services/next.png') center no-repeat
+
+.slick-list
+    overflow: hidden
