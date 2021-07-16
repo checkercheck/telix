@@ -1,7 +1,19 @@
 .mainScreen
-    background: url('/img/mainScreen/mainScreen-bg.jpg') center no-repeat
+    background: url('/img/mainScreen/mainScreen-bg.jpg')   center no-repeat
     background-size: cover
     padding: 3.875rem 0 2rem 0
+    position: relative
+    overflow: hidden
+    .container
+        position: relative
+    &::before
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        background: rgba( 0, 0 , 0, 0.7 )
+        width: 100%
+        height: 100%
     &__login
         margin-left: auto
         display: block
@@ -9,7 +21,7 @@
         width: 7.5625rem
         height: 2.8125rem
         border: none
-        font-weight: bold
+        font-weight: 400
         font-size: 1.3125rem
         color: #fff
         cursor: pointer
@@ -46,6 +58,15 @@
         align-items: center 
         height: 100%
         justify-content: space-between
+        cursor: pointer
     &__img 
         width: 1.5625rem
         margin-bottom: 0.125rem
+
+.menu__link.active 
+    color: #00A0CF
+
+
+@media (max-width: 768px)
+    .nav
+        display: none

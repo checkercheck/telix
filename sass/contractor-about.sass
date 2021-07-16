@@ -1,0 +1,65 @@
+.contractor-about
+    background-color: #32425C
+    padding: 2.5rem 0 
+    position: relative
+    z-index: 2
+    &__img
+        position: absolute
+        top: 0
+        right: 0
+        width: 14rem
+        z-index: -1
+    &__button
+        background: #C1272D
+        width: 18.75rem
+        height: 2.375rem
+        border: none
+        font-style: normal
+        font-weight: normal
+        font-size: 0.875rem
+        text-align: center
+        text-transform: uppercase
+        color: #FFFFFF
+        cursor: pointer
+        margin-top: 3.75rem
+    &__wrapper
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        align-items: center
+    &__container
+        display: flex
+        justify-content: center
+    &__text
+        width: 55.0625rem
+        margin: 0 auto
+        text-align: center
+        font-weight: normal
+        font-size: 1.3125rem
+        line-height: 1.875rem
+        text-align: center
+        color: #fff
+        text-transform: uppercase
+        span 
+            color: #FF0000
+
+
+@media ( max-width: 576px )
+    .contractor-about
+        &__img
+            width: 9rem
+        &__container
+            align-items: center
+        &__wrapper
+        &__button
+            width: 7.27rem
+            height: 1.4rem
+            font-size: .72727272727rem
+            margin-top: 1.75rem
+            span 
+                display: none
+        &__text
+            font-size: 0.72727272727rem
+            width: initial
+            br 
+                display: none

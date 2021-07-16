@@ -45,6 +45,10 @@
             font-size: 1.125rem
             color: #F1F5F7
             margin-right: 2.75rem
+            cursor: pointer
+            a 
+                text-decoration: none
+                color: #F1F5F7
             &:last-child
                 margin-right: 0
 
@@ -65,3 +69,33 @@
         li 
             margin-right: 3.4375rem
             color: #00A0CF
+            a 
+                color: #00A0CF
+
+
+
+@media  ( max-width: 576px  )
+    .footer
+        position: relative
+        &__img
+            width: initial
+            height: 3rem
+        &__date
+            margin-top: 0.45454545454rem
+        &__links
+            p 
+                &:first-child
+                    display: none
+        &-bottom
+            .footer__row
+                flex-direction: column-reverse
+                align-items: flex-end
+        &__img-wrapper
+            position: absolute
+            top: 0
+        &-menu
+            display: none
+        &__row
+            &:nth-child(2)
+                display: none
+        

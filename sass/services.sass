@@ -13,24 +13,32 @@
     display: flex
     justify-content: space-between
     padding: 1.4375rem
+    text-decoration: none
+    cursor: pointer
+    img 
+        width: 4.375rem
     &:hover
         background: #C1272D
         transition: 0.3s all
     &__button
-        width: 8.4375rem
         height: 2.375rem
+        font-size: 0.875rem
         border: none
-        color: #fff
         background: rgba(255,255,255, 0.3)
         margin-top: 0.75rem
         cursor: pointer
+        text-transform: uppercase
+        padding: 0.5rem
+        color: #fff
+        a 
+            text-decoration: none
+            color: #fff
+            font-weight: inherit
     &__title
         font-weight: normal
         font-size: 1.5rem
         color: #fff
         line-height: 1.875rem
-    &__img
-        width: 21%
         
 .service-slider
     width: 100%
@@ -39,8 +47,8 @@
     min-width: 0
     &__slide
     &__arrows
-        width: 21px
-        height: 39px
+        width: 1.3125rem
+        height: 2.4375rem
         position: absolute 
         top: 40%
         margin: 0.9375rem 0 0 0
@@ -49,9 +57,52 @@
     &__prev
         left: 2%
         background: url('../img/services/prev.png') center no-repeat
+        background-size: contain
     &__next
         right: 2%
         background: url('../img/services/next.png') center no-repeat
+        background-size: contain
 
-.slick-list
-    overflow: hidden
+.mobile-service-block
+    display: none
+
+
+@media screen and ( max-width: 768px  )
+    .service-block
+        align-items: center
+        img 
+            width: 3.375rem
+        &__button
+            display: none
+
+@media ( max-width: 576px )
+    .service
+        &-slider
+            &__arrows
+                margin: 0
+        &-block
+            width: 48%
+            margin-bottom: 0.90909090909rem
+            align-items: center
+            &__img
+                width: 4.1rem
+            &:nth-child(3)
+                display: none
+    .services
+        &__container
+            flex-wrap: wrap
+    .mobile-service-block
+        display: flex !important
+
+
+@media ( max-width: 350px )
+    .services
+         &:first-child
+                .service-block
+                    &:nth-child(2)
+                        margin-bottom: 0
+    .service
+        &-block
+            width: 100%
+            img 
+                width: 2.375rem

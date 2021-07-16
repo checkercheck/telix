@@ -29,9 +29,9 @@
 
 .tab-pannel
     position: absolute
-    top: 10.0625rem
+    top: 4.0625rem
     z-index: 3
-    left: 3.5625rem
+    left: 0
     list-style-type: none
     color: #fff
     &__item
@@ -56,10 +56,13 @@
     &-more
         display: flex
         flex-direction: column
+        align-items: center
+        &__img
+            width: 9.375rem
         &__button
             width: 9.1875rem
             height: 2.375rem
-            margin-top: 2.0625rem
+            margin-top: 5.5rem
             background: #C1272D
             color: #fff
             font-weight: normal
@@ -70,6 +73,7 @@
         display: flex
         margin-top: 3.25rem
         justify-content: space-between
+        align-items: flex-end
     &-info
         width: 18.75rem
         margin-left: 20.4rem
@@ -91,3 +95,50 @@
     background: #FFFFFF
     color: #32425C
     box-shadow: 0 0.0625rem 0 #293449, inset 0 0.0625rem 0 #405069
+
+
+    
+@media   ( max-width: 920px  )
+    .tab
+        &-content
+            &__container
+                padding: 0
+        &-container
+            padding: 0
+
+
+@media   ( max-width: 768px  )
+    .tariffs
+        &__description
+            margin-top: 0
+    .tab
+        &-pannel
+            top: 11.0625rem
+        &-container
+            padding: 0
+            margin: 0 15px
+        &-content
+            &__container
+                align-items: flex-start
+                padding: 0
+                margin-top: 1.25rem
+            &-info
+                display: none
+
+
+@media   ( max-width: 576px  )
+    .tab
+        &-content
+            &__container
+                margin-top: 1.25rem
+            &-more
+                margin-top: 7rem
+                &__img 
+                    width: 6.375rem
+    .tariffs
+        &__description 
+            margin-right: 0
+            width: 19.8rem
+            a
+                text-decoration: none
+                color: #fff

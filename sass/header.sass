@@ -12,7 +12,6 @@
         position: relative
         display: flex
         align-items: center
-        padding: 0.5625rem 0
 
 .how-to-pay
     margin-left: auto
@@ -20,6 +19,7 @@
     color: #fff
     font-size: 1.125rem
     font-weight: bold
+    cursor: pointer
     &__img
         margin-right: .1875rem
 
@@ -36,7 +36,7 @@
         text-transform: capitalize
         color: #fff
         font-size: 1.125rem
-        font-weight: bold
+        font-weight: 400
         &::placeholder
             color: #fff
 
@@ -51,5 +51,29 @@
     display: flex
     justify-content: center
     align-items: center
+    z-index: 1
     &__img
         width: 93%
+
+
+
+@media (max-width: 768px)
+    .search 
+        display: none
+    .mobile
+        &-search
+            display: block
+    .header
+        position: relative
+        padding: 1.2rem .625rem
+        &__container
+            position: initial
+            justify-content: space-between
+        &__phone
+            display: none
+    .how-to-pay
+        margin-left: 0
+        &__text
+            display: none
+
+

@@ -12,21 +12,85 @@ body
     font-family: Cuprum
     font-style: normal
 
-// @media (min-width: 768px) and (max-width: 992px)
-// \:root
-//     font-size: 12px
 
-// @media (min-width: 576px) and (max-width: 768px)
-// \:root
-//     font-size: 12px
+@media (max-width: 920px)
+  \:root
+    font-size: 13px
 
-// @media (min-width: 320px) and (max-width: 576px)
-// \:root
-//     font-size: 10px
+
+@media (max-width: 920px)
+  \:root
+    font-size: 12px 
+
+
+@media (max-width: 768px)
+  \:root
+    font-size: 11px
+
+@media (max-width: 350px)
+  \:root
+    font-size: 10px
 
 .container
     max-width: 1170px
     margin: 0 auto
+
+@media (max-width: 1170px)
+  .container
+    max-width: 920px
+
+@media (max-width: 920px)
+  .container
+    max-width: 768px
+    padding: 0 15px
+
+@media (max-width: 768px)
+  .container
+    padding: 0 15px
+
+
+
+.button-group
+  display: flex
+
+.button-prev , .button-next
+  width: 6.25rem
+  height: 2.375rem
+  cursor: pointer
+  font-size: 14px
+  display: flex
+  align-items: center
+  justify-content: center
+  text-transform: uppercase
+  color: #FFFFFF
+  border: none
+  background: #C1272D
+
+.section-title
+  padding: 1.5625rem 1.25rem
+  background-color: #32425C
+  display: flex
+  justify-content: space-between
+  &__button
+      width: 12rem
+      height: 2.375rem
+      background: #C1272D
+      border: none
+      font-weight: normal
+      font-size: 1.125rem
+      text-transform: uppercase
+      color: #FFFFFF
+      cursor: pointer
+
+  &__text
+    font-weight: normal
+    font-size: 1.875rem
+    text-transform: uppercase
+    color: #FFFFFF
+  
+.button-prev
+  margin-right: 1.875rem
+
 
 .hide
     display: none
@@ -38,6 +102,9 @@ body
   animation-duration: 2.5s
   -webkit-animation-name: fade
   -webkit-animation-duration: 2.5s
+
+.lock
+  overflow: hidden
 
 @-webkit-keyframes fade
   0%
@@ -56,6 +123,21 @@ body
 @import 'header'
 @import 'mainScreen'
 @import 'services'
+@import 'our-projects'
 @import 'tariffs'
 @import  'contacts'
 @import 'footer'
+@import 'mobile-menu'
+
+@import 'popup-about'
+@import 'popup-contacts'
+@import 'popup-site-creating'
+@import 'popup-how-to-pay'
+
+@import 'contractor-services'
+@import 'contractor-about'
+@import 'contractor-projects'
+
+@import 'operator-teriffs'
+@import 'operator-advantages'
+@import 'operator-services'

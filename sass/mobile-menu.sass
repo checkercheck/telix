@@ -1,0 +1,92 @@
+.mobile-menu
+    position: fixed
+    background: #293449
+    top: -100%
+    left: 0
+    width: 100%
+    height: 100%
+    transition: all 0.5s
+    z-index: 2
+    &__title
+        font-weight: bold
+        margin-top: 15px
+        font-size: 20px
+        color: #FFFFFF
+        padding: 0 19px 0.9375rem 19px
+        border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+    &__list
+        list-style-type: none
+        font-size: 18px
+        font-weight: bold
+        color: #FFFFFF
+        li 
+            padding: 1.125rem 19px
+            a 
+                text-decoration: none
+                color: #FFFFFF
+            &:hover
+                background: #00A0CF
+
+.menu
+    &-burger
+        position: absolute
+        right: 1.4375rem
+        width: 15px
+        height: 9px
+        z-index: 3
+        display: none
+        &::before , &::after
+            content: ''
+            background-color: #fff
+            position: absolute
+            width: 100%
+            height: 1px
+            left: 0
+            transition: all .3s ease 0s
+        &::before
+            bottom: 0
+        span
+            position: absolute
+            background: #fff
+            left: 0
+            width: 100%
+            height: 1px
+            top: 4px
+            -webkit-transition: all .3s ease 0s
+            -o-transition: all .3s ease 0s
+            transition: all .3s ease 0s
+    
+// toogle Class .Active {Query}
+.menu-burger.active::before
+ transform: rotate(45deg)
+ background-color: #fff
+ top: 3px
+
+.mobile-menu.active 
+ top: 0
+ transition: all 0.5s
+ overflow: hidden
+
+.menu-burger.active::after
+ transform: rotate(-45deg)
+ background-color: #fff
+ bottom: 5px
+
+.menu-burger.active span
+ transform: scale(0)
+ background-color: #fff
+// toogle Class .Active {Query}
+.menu-burger::before
+ top: 0
+
+.menu-burger::after
+ bottom: 0
+
+
+
+@media ( max-width: 768px  )
+    .menu-burger
+        display: block
+        position: relative
+        right: 0
+    

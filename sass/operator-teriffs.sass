@@ -1,0 +1,176 @@
+.operator-tariffs
+    padding: 5.625rem 0
+    &__bottom-pannel
+        
+    &__text
+        font-weight: bold
+        font-size: 0.875rem
+        text-align: center
+        text-transform: uppercase
+        color: #FF0000
+        
+    &__footer
+        display: flex
+        justify-content: space-between
+        margin-top: 2.0625rem
+    &__wrapper
+        display: flex
+    &__tab-content
+        background: #333940
+        border: 0.0625rem solid #000000
+        border-radius: 1.25rem
+        margin-top: 0.6875rem
+        padding: 0 1.875rem 2.9375rem  1.875rem
+        display: flex
+        flex-direction: column
+        display: none
+    &-tab-pannel
+        display: flex
+        justify-content: space-between
+        list-style-type: none
+        &__button
+            width: 10.0625rem
+            height: 2.125rem
+            margin-top: 0.75rem
+            display: flex
+            justify-content: center
+            align-items: center
+            border: none
+            background: rgba(255,255,255,.3)
+            font-weight: bold
+            font-size: 0.875rem
+            line-height: 1.125rem
+            text-transform: uppercase
+            color: #FFFFFF
+            cursor: pointer
+        &__title
+            font-weight: normal
+            font-size: 1.5rem
+            line-height: 1.875rem
+            color: #FFFFFF
+        &__item
+            background: #32425C
+            padding: 1.4375rem
+            width: 23.125rem
+            display: flex
+            justify-content: space-between
+            cursor: pointer
+            &:nth-child(1)
+                .operator-tariffs-tab-pannel__img      
+                    width: 70px
+            &:nth-child(2)
+                .operator-tariffs-tab-pannel__img      
+                    width: 68.67px
+            &:nth-child(3)
+                .operator-tariffs-tab-pannel__img      
+                    width: 70px             
+
+.column
+    border-right: 0.0625rem  dashed #4CBDDD
+    &__item
+        display: flex
+        justify-content: center
+        align-items: center
+        height: 3.875rem
+        font-weight: bold
+        font-size: 1.25rem
+        text-transform: uppercase
+        color: #FFFFFF
+    &__wrapper
+        width: 25%
+        &:last-child
+            .column
+                border: none
+                &__item
+                    font-size: 0.8125rem
+                    text-align: center
+        
+    &__title
+        font-weight: bold
+        font-size: 1.5625rem
+        line-height: 1.125rem
+        text-align: center
+        text-transform: uppercase
+        color: #57A7BF
+        margin: 3.0625rem 0 0 0
+        padding-bottom: 1.25rem
+        border-bottom:  0.0625rem solid #4CBDDD
+    
+
+.bottom-pannel
+    display: flex
+    &__item
+        width: 8.4375rem
+        height: 2.375rem
+        background: #6F7B8D
+        display: flex
+        justify-content: center
+        align-items: center
+        border: none
+        font-weight: bold
+        font-size: 0.875rem
+        text-transform: uppercase
+        color: #FFFFFF
+
+.operator-tariffs__tab-content
+    &:first-child
+        display: block
+        
+
+.operator-tariffs-tab-pannel__item.active
+    background: #333940
+    border-radius: 1.25rem
+
+.operator-tariffs-tab-pannel__button.active
+    background: rgba(0, 160, 207, 0.7)
+
+
+@media screen and ( max-width: 1170px  )
+    .operator-tariffs
+        &-tab-pannel
+            &__item
+                width: 18.125rem
+    
+@media screen and ( max-width: 920px  )
+    .operator-tariffs
+        &-tab-pannel
+            &__title
+                text-align: center
+            &__item
+                width: 20.125rem
+                justify-content: center
+            &__img 
+                display: none
+
+@media screen and ( max-width: 768px  )
+    .operator-tariffs
+        &-tab-pannel
+            &__item
+                width: 32%
+            
+@media screen and ( max-width: 450px  )
+    .operator-tariffs
+        padding: 3.4rem 0
+        &-tab-pannel
+            &__item
+                padding: 1rem
+            &__button
+                font-size: 0.6rem
+                width: 6.8rem
+                height: 1.7rem
+            &__title
+                font-size: 1.2rem
+        &__tab-content
+            padding-left: 0
+            padding-right: 0
+    .column
+        &__title
+            font-size: 1rem
+            margin: 2.0625rem 0 0 0
+        &__wrapper
+            .column
+                &__item
+                    font-size: 0.8rem
+                    text-align: center
+    
+    

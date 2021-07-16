@@ -1,0 +1,206 @@
+.popup-about
+    position: fixed
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%)
+    padding: 1.25rem
+    background: #293449
+    border-radius: 0.25rem
+    z-index: 99999
+    opacity: 1
+    width: 50.8125rem
+    padding: 3.125rem
+    &-list 
+        list-style-type: none
+        margin-top: 2.375rem
+        line-height: 2.1875rem
+        &__item
+            display: flex
+            align-items: center
+            font-style: normal
+            font-weight: normal
+            font-size: 1.125rem
+            color: #FFFFFF
+            span
+                width: 10.5625rem
+                margin-right: 3.75rem
+            a 
+                color: #C1272D
+                text-decoration: none
+            &:before
+                content: ''
+                width: 1.5625rem
+                height: 0.125rem
+                background: #C1272D
+                display: block
+                margin-right: 0.75rem
+    &__button
+        width: 12rem
+        height: 2.375rem
+        background: #C1272D
+        cursor: pointer
+        border: none
+        font-weight: bold
+        font-size: 0.875rem
+        text-transform: uppercase
+        margin-top: 0.75rem
+        color: #FFFFFF
+        display: none
+    &__right-column
+        display: flex
+        flex-direction: column
+        align-items: center
+    &__text
+        font-weight: 400
+        font-size: 1.125rem
+        line-height: 1.5rem
+        color: #FFFFFF
+        width: 20.4375rem
+        p
+            &:last-child
+                margin-top: 1.5625rem
+    &__number
+        font-weight: bold
+        font-size: 2.5rem
+        line-height: 2.875rem
+        letter-spacing: 0.05rem
+        text-transform: uppercase
+        color: #FFFFFF
+        margin-top: 1.25rem
+    &__advantages
+        display: flex
+        flex-wrap: wrap
+        justify-content: end
+        width: 21rem
+        margin-left: auto
+    &__advantage
+        width: 7rem
+        height: 7rem
+        small
+            font-weight: normal
+            font-size: 0.625rem
+            line-height: 0.75rem
+            text-align: center
+            color: #FFFFFF
+        p 
+            font-weight: normal
+            font-size: 0.9375rem
+            line-height: 1.0625rem
+            letter-spacing: 0.05rem
+            color: #FFFFFF
+        p , small
+            text-align: center
+        span 
+            
+        img 
+            width: 100%
+            height: 100%
+            object-fit: cover
+        &:nth-child(1),
+        &:nth-child(2),
+        &:nth-child(5)
+            background: #BD0140
+            border: 1px solid #BD0140
+            display: flex
+            align-items: center
+            flex-direction: column
+    &__description
+        font-weight: normal
+        font-size: 1.3125rem
+        line-height: 1.875rem
+        text-align: center
+        text-transform: uppercase
+        color: #FFFFFF
+        width: 21.8125rem
+        span
+            color: #C1272D
+            font-weight: bold
+    &__mini-title
+        font-size: 1.375rem
+        line-height: 1.5rem
+        color: #FFFFFF
+        width: 19.1875rem
+        text-align: center
+        span
+            color: #C1272D
+            font-weight: bold
+    &__title
+        font-size: 1.875rem
+        line-height: 1.5rem
+        color: #FFFFFF
+        span
+            color: #C1272D
+            font-weight: bold
+    &__wrapper
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-top: 1.5625rem
+    &__header
+        display: flex
+        justify-content: space-between
+    &-list 
+        list-style-type: none
+        margin-top: 2.375rem
+    &__item
+        display: flex
+        align-items: center
+        font-style: normal
+        font-weight: normal
+        font-size: 1.125rem
+        color: #FFFFFF
+        span
+            width: 10.5625rem
+            margin-right: 3.75rem
+        &:before
+            content: ''
+            width: 1.5625rem
+            height: 0.125rem
+            background: #C1272D
+            display: block
+            margin-right: 0.75rem
+    &__fade
+      display: none
+      &::before
+          content: ''
+          background: #000
+          position: fixed
+          left: 0
+          top: 0
+          width: 100%
+          height: 100%
+          opacity: 0.7
+          z-index: 9999
+
+.mobile-popup-about
+    &__content
+        display: none
+
+.mobile-popup-about__wrapper
+    justify-content: space-between
+    align-items: center
+    margin-top: 1.875rem
+    display: none
+    .popup-about__button
+        font-size: 1rem
+
+    .img-rocket
+            transform: rotate(180deg)
+            width: 12rem
+
+   
+
+@media screen and ( max-width: 768px)
+    .mobile-popup-about
+        &__content
+            display: block
+        &__wrapper
+            display: flex
+    .popup-about
+        width: 32.8125rem
+        padding: 2.125rem
+        &__mini-title
+            display: none
+        &__wrapper
+            display: none
+    
